@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Hasya</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#beranda" class="logo">Portofolio Hasya</a>
+
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false">
+                Menu
+            </button>
+
+            <nav id="nav-menu">
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#proyek">Proyek</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="beranda" class="hero">
+            <div class="container">
+                <p>PORTOFOLIO</p>
+                <h1>Hasya Nadana Hakim</h1>
+                <p>
+                    Interested in technology, especially IoT, data management, and warehouse systems. Experienced in technology-based workflows, data handling, and system monitoring to improve operational efficiency. Adaptable, detail-oriented, and passionate about continuous learning, teamwork, and problem solving.
+                </p>
+
+                <a href="#proyek" class="button">Lihat Proyek</a>
+            </div>
+        </section>
+
+        <section id="tentang" class="section">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Mahasiswa Politeknik Negeri Bandung dengan pengalaman Praktik Kerja Lapangan (PKL) di bidang operasional gudang sebagai Assistant Warehouse Manager di PT Telkom Akses. Berpengalaman membantu proses monitoring inventaris, stock opname, distribusi material, serta administrasi dokumen warehouse untuk menjaga akurasi data dan kelancaran operasional. Memiliki ketelitian tinggi, mampu bekerja sama dalam tim, serta terbiasa mengolah data dan berkoordinasi lintas fungsi.
+                </p>
+            </div>
+        </section>
+
+        <section id="proyek" class="section">
+            <div class="container">
+                <h2>Proyek</h2>
+
+                <div class="filter">
+                    <label for="filter-proyek">Filter proyek:</label>
+
+                    <select id="filter-proyek">
+                        <option value="semua">Semua</option>
+                        <option value="Web">Web</option>
+                        <option value="UI/UX">UI/UX</option>
+                    </select>
+                </div>
+
+                <div id="daftar-proyek" class="project-list"></div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <div class="container">
+                <h2>Kontak</h2>
+                <p>
+                    Silakan hubungi saya untuk informasi lebih lanjut.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Portofolio Hasya</p>
+        </div>
+    </footer>
+</body>
+</html>
