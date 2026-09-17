@@ -1,0 +1,190 @@
+:root {
+    --primary: #548aff;
+    --primary-hover: #3966e1;
+    --bg: #f8fafc;
+    --white: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #cbd5e1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--primary-hover);
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.profile-section {
+    padding: 60px 0;
+}
+
+#status {
+    margin-bottom: 15px;
+    color: var(--muted);
+}
+
+.profile-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.profile-card h1 {
+    margin-bottom: 8px;
+}
+
+.profile-card > p {
+    color: var(--muted);
+}
+
+.profile-card #tombol-detail {
+    margin-top: 20px;
+}
+
+.detail {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--bg);
+    border-radius: 6px;
+}
+
+.detail.is-open {
+    display: block;
+}
+
+.detail p {
+    margin-bottom: 5px;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.skills h2 {
+    margin-bottom: 15px;
+}
+
+#form-skill {
+    margin-bottom: 15px;
+}
+
+#skill {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+#error-skill {
+    color: red;
+    margin-top: 5px;
+}
+
+#daftar-skill {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#daftar-skill li {
+    margin-bottom: 8px;
+}
+
+#daftar-skill button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--white);
+    cursor: pointer;
+}
+
+#daftar-skill button:hover {
+    background: var(--bg);
+}
+
+.dark-theme {
+    background: #333;
+    color: white;
+}
+
+.dark-theme header,
+.dark-theme .profile-card {
+    background: #444;
+}
+
+.dark-theme header {
+    border-color: #555;
+}
+
+@media (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-section {
+        padding: 40px 0;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    #skill {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}

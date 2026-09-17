@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Profile Card</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <a href="#" class="logo">Profile Card</a>
+
+        <button id="ubah-tema" class="button">
+            Ganti Tema
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="profile-section">
+        <div class="container">
+
+            <p id="status">Menunggu data...</p>
+
+            <article class="profile-card">
+
+                <h1 id="nama">-</h1>
+                <p id="deskripsi">-</p>
+
+                <button
+                    id="tombol-detail"
+                    class="button"
+                    aria-expanded="false"
+                >
+                    Lihat Detail
+                </button>
+
+                <div id="detail" class="detail">
+                    <p id="email">-</p>
+                    <p id="prodi">-</p>
+                    <p id="kelas">-</p>
+                </div>
+
+                <section class="skills">
+                    <h2>Keterampilan</h2>
+
+                    <form id="form-skill">
+                        <input
+                            type="text"
+                            id="skill"
+                            placeholder="Masukkan keterampilan"
+                        >
+
+                        <button type="submit" class="button">
+                            Tambah
+                        </button>
+
+                        <p id="error-skill"></p>
+                    </form>
+
+                    <ul id="daftar-skill"></ul>
+                </section>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Interactive Profile Card - Hasya Nadana Hakim</p>
+    </div>
+</footer>
+
+</body>
+</html>
