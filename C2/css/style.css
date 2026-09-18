@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f3f4f6;
+}
+
+.container {
+    width: min(90%, 720px);
+    margin-inline: auto;
+    padding-block: 64px;
+}
+
+.praktikum-card {
+    padding: 32px;
+    border: 2px solid #d1d5db;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.label {
+    margin: 0 0 8px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+#status {
+    margin-bottom: 24px;
+    color: #6b7280;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-item h2 {
+    margin: 0;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 16px;
+    border: 0;
+    color: #ffffff;
+    background: #2563eb;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background: #1d4ed8;
+}
+
+.faq-question:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: -3px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 16px;
+    background: #ffffff;
+}
+
+.faq-answer.is-open {
+    display: block;
+}
+
+.faq-answer p {
+    margin: 0;
+}

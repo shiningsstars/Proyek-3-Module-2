@@ -1,0 +1,14 @@
+[
+    {
+        "judul": "HTML",
+        "deskripsi": "Digunakan untuk membuat struktur halaman web."
+    },
+    {
+        "judul": "CSS",
+        "deskripsi": "Digunakan untuk mengatur tampilan halaman web."
+    },
+    {
+        "judul": "JavaScript",
+        "deskripsi": "Digunakan untuk membuat halaman web menjadi interaktif."
+    }
+]
